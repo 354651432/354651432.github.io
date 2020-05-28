@@ -18,7 +18,8 @@
             }
         }
         navigator.mediaDevices.getUserMedia(myConstraints).then((stream) => {
-            // createObjectURL是个非常有用的API，诸位可以多研究研究
+            // createObjectURL是个非常有用的API，诸位可以多研究研究]
+            console.log(stream)
             video.src = (stream)
             video.play()
         }, (error) => {
