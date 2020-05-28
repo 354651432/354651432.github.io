@@ -19,7 +19,7 @@
         }
         navigator.mediaDevices.getUserMedia(myConstraints).then((stream) => {
             // createObjectURL是个非常有用的API，诸位可以多研究研究
-            video.src = window.URL.createObjectURL(stream)
+            video.src = (stream)
             video.play()
         }, (error) => {
             console.error(error.name || error)
